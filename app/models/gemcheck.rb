@@ -1,0 +1,2 @@
+class Gemcheck < ApplicationRecord
+end

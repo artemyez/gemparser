@@ -1,0 +1,24 @@
+<h1>Current gem number = <%=  @gems_num.last.gemnumber %></h1>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">date</th>
+      <th scope="col">rubygem</th>
+      <th scope="col">title</th>
+      <th scope="col">cve</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @gems.each do |c| %>
+      <tr>
+        <th scope="row"><%= c.id %></th>
+
+        <td><%= c.date %></td>
+        <td><%= c.rubygem %></td>
+        <td><%= c.title %></td>
+        <td><%= c.cve %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

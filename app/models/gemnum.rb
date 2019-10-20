@@ -1,0 +1,2 @@
+class Gemnum < ApplicationRecord
+end
