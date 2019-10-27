@@ -1,7 +1,8 @@
 class GemsController < ApplicationController
   before_action :find_gems, :gem_parser
   require 'open-uri'
-
+  require 'nokogiri'
+  require 'json'
 
 
   def gem_parser
