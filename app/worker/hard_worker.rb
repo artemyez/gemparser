@@ -1,8 +1,6 @@
 class HardWorker
   include Sidekiq::Worker
   require 'open-uri'
-  require 'nokogiri'
-  require 'json'
 
   def perform()
     @result = []
